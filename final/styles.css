@@ -1,0 +1,273 @@
+/* Style sheet created by Ryan Zmuda, November 27, 2017 */
+
+/* Base style for body */
+body {
+	background-color: #411A03;
+}
+
+/* Base style for images, makes images fluid and have rounded borders */
+img {
+	max-width: 100%;
+	border-radius: 0.5em;
+}
+
+/* Styles for mobile */
+/* Contains body, adds fluid margins */
+#container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Base style for header */
+header {
+	text-align: center;
+	padding: 0.5em;
+}
+
+/* Base style for nav */
+nav {
+	font-family: Verdana, serif;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+/* Base style for nav unordered list */
+nav ul {
+	padding: 0;
+	margin-top: -0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+/* Base style for nav list items */
+nav li {
+	background-color: #A68064;
+	border-radius: 0.5em;
+	list-style-type: none;
+	margin: 0.4em;
+	padding: 0.25em;
+}
+
+/* Changes link color to white and removes underline */
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* Highlight links on hover */
+nav li:hover {
+	background-color: #634C3C;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/* Style for current nav item */
+.current {
+	background-color: #634C3C;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	list-style-type: none;
+	margin: 0.4em;
+	padding: 0.25em;
+}
+
+/* Style for currently selected coffee */
+.currentcoffee {
+	background-color: #634C3C;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	list-style-type: square;
+}
+
+/* Style for coffee list (mobile only) */
+.coffeelist {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+/* Hides the desktop class */
+.desktop {
+	display: none;
+}
+
+/* Hides the bigmenu class */
+.bigmenu {
+	display: none;
+}
+
+/* Base style for main */
+main {
+	display: block;
+	font-family: Georgia, serif;
+	padding: 1em;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	margin: 0.5em;
+	color: #FFFFFF;
+	background-color: #A68064;
+}
+
+/* Base style for images in main */
+main img {
+	float: right;
+	display: inline;
+}
+
+/* Base style for tables */
+table {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Base style for table header */
+th {
+	float: left;
+	padding: 0.25em;
+}
+
+/* Base style for links in table */
+th a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+th img {
+	float: left;
+	margin-right: 0.5em;
+}
+
+/* Highlights on hover */
+th:hover {
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	background-color: #634C3C;
+}
+
+/* Base style for form */
+form {
+	margin-top: 0.5em;
+	display: block;
+}
+
+/* Style for form input */
+form input {
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/* Base style for lists in main */
+.coffeemain {
+	list-style-type: square;
+	width: 30%;
+	margin-left: 3em;
+	margin-right: auto;
+}
+
+/* Style for links in lists in main */
+.coffeemain a {
+	color: #FFFFFF;
+	text-decoration: none;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/* Highlights on hover */
+.coffeemain li:hover {
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	background-color: #634C3C;
+}
+
+/* Style for menu images */
+#menu img {
+	float: left;
+	margin-right: 0.5em;
+}
+
+/* Style for email in contact */
+#contact a {
+	color: #FFFFFF;
+}
+
+/* Style for email in contact */
+#contact a:hover {
+	font-style: italic;
+}
+
+/* Base style for footer */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+	color: #FFFFFF;
+}
+
+/* Style for link within footer */
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* Styles for tablet */
+@media only screen and (min-width: 660px) {
+	
+	/* Style specifies a horizontal display for navigation links */
+	nav li {
+		display: inline;
+		float: left;
+		width: 19%;
+		border-radius: 0;
+		margin-bottom: 1.5em;
+	}
+	
+	/* Style specifies to display the desktop class */
+	.desktop {
+		display: inline;
+	}
+	
+	/* Hides the bigmenu class */
+	.bigmenu {
+		display: none;
+	}
+	
+	/* Hides coffee list (mobile only) */
+	.coffeelist {
+		display: none;
+	}
+	
+	/* Style for contact */
+	#contact {
+		background-color: #634C3C;
+		margin-top: 2em;
+		margin-left: 5em;
+		margin-right: 5em;
+		padding: 1.25em;
+		border-radius: 0.7em 0.7em 0.7em 0.7em;
+	}
+	
+	/* Style to make comment box rounded */
+	#contact textarea {
+		border-radius: 0.7em 0.7em 0.7em 0.7em;
+	}
+	
+}
+
+/* Styles for desktop */
+@media only screen and (min-width: 830px) {
+	
+	/* Pad content margins for desktop view */
+	main p {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+	}
+	
+	.bigmenu {
+		display: inline;
+	}
+	
+	/* Style for menu */
+	#menu {
+		background-color: #634C3C;
+		margin-left: 5em;
+		margin-right: 5em;
+		padding: 1.25em;
+		border-radius: 0.7em 0.7em 0.7em 0.7em;
+	}
+	
+}

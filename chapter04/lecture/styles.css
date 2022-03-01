@@ -1,0 +1,26 @@
+/*    Ryan Zmuda
+      October 23, 2017 */
+body {
+	background-color: #C9E4FF;
+	color: white;
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+	background-color: green;
+}
+
+nav, footer {
+	background-color: lime;
+	padding: 3%;
+	margin: 2%;
+}
+
+img {
+	float: right;
+}
+
+.clearfloat {
+	clear: both;
+}

@@ -1,0 +1,35 @@
+<head>
+	<title>Sum of Numbers</title>
+	<script>
+		//Vars
+		var entry;
+		var valid = false;
+		var again = "y";
+		//Main loop
+		do {
+			//Validate entry
+			do {
+				entry = prompt("Enter any top number to sum\n" + "from 1 through 100:");
+				entry = parseInt(entry);
+				if(entry >= 1 && entry <= 100) {
+					valid = true;
+				}
+				else {
+					alert("Entry must be a valid number from 1 through 100.");
+				}
+			}
+			while (valid = false);
+			//Get sum
+			var sum = 0;
+			for (i = 0; i <= entry; i++) {
+				sum += i;
+			}
+			sum = parseInt(sum);
+			//Report
+			alert("The sum of the numbers from 1 through " + entry + " is " + sum);
+			//Prompt again
+			again = prompt("Calculate another?", "y")
+		}
+		while (again == "y")
+	</script>
+</head>

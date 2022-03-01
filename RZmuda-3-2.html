@@ -1,0 +1,48 @@
+<head>
+	<title>Number Grades to Letter Grade</title>
+	<script>
+		//Vars
+		var total = 0;
+		var numGrades = 0;
+		var letterGrade;
+		var grade;
+		//Enter grades until 999
+		do {
+			grade = prompt("Enter number grade from 0 through 100\n" + 
+				"Or enter 999 to end entries", 999);
+			grade = parseInt(grade);
+			if (grade >= 0 && grade <= 100) {
+				total = total + grade;
+				numGrades++;
+			}
+			else if (grade != 999) {
+				alert("Entry must be a valid number from 0 through 100\n" +
+					"Or enter 999 to end entries");
+			}
+		}
+		while (grade != 999);
+		//Calculate average
+		var average = total / numGrades;
+		numGrades = parseInt(numGrades);
+		total = parseInt(total);
+		average = parseInt(average);
+		//Get letter grade
+		if (average >= 88) {
+			letterGrade = "A";
+		}
+		else if (average >= 80) {
+			letterGrade = "B";
+		}
+		else if (average >= 68) {
+			letterGrade = "C";
+		}
+		else if (average >= 60) {
+			letterGrade = "D";
+		}
+		else {
+			letterGrade = "F";
+		}
+		//Report
+		alert("Number grade = " + average + "\nLetter grade = " + letterGrade);
+	</script>
+</head>
